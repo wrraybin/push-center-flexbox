@@ -102,7 +102,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
@@ -117,19 +117,46 @@ body {
   align-items: center;
 }
 
+header{
+    flex: 100%;
+    font-size: 6em;
+    padding-left: 30px;
+}
+
+header p{
+    color: red;
+    font-family: 'Mansalva', cursive;
+}
+
+.about{
+    flex: 100%;
+    font-size: 2em;
+}
+
+.about p{
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: #82FF33;
+}
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
+  font-size: 1.8em;
   background-color: black;
   height: auto;
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-  
+  flex-flow: row wrap;
+  justify-content: space-between; 
+}
+.div-1, .div-2, .div-3 p{
+    padding-left: 20px;
+    color: #82FF33;
 }
 
 .div-2{
@@ -140,9 +167,32 @@ body {
     border-left: 5px solid #ffffff;
 }
 
-p{
-    color: #82FF33;
+
+footer{
+    display: flex;
+    flex-basis: 100%;   
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 370px;
+    padding-right: 370px;
+    padding-top: 50px;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+
+  .fa:hover {
+    opacity: 0.5;
+  }
 
 
 /* ==========================================================================
