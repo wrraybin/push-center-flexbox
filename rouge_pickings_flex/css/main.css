@@ -252,15 +252,15 @@ footer span {
 		margin: 0 auto;
 	}
 
-	header h1 {
-		float: left;
-		margin: 0;
-		padding: 38px 0;
-	}
 	header nav {
 		float: right;
 		width: 60%;
 		padding: 46px 0;
+	}
+
+	header nav ul{
+		display: flex;
+		justify-content: space-between;
 	}
 
 	footer {
