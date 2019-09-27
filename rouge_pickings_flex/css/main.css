@@ -48,24 +48,31 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	/*height: 110px;*/
+	width: 100%;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 
 }
 
 header h1 {
-	float: left;
+	/*float: left;*/
 	margin: 0;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
+	/*float: right;*/
+	text-align: center;
+	width: 30%;
 	padding: 46px 0;
 }
 header nav ul {
@@ -87,8 +94,9 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 .top-section,
 .bottom-section {
+	width: 100%;
 	margin: 0 auto;
-	clear: both;
+	/*clear: both;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -97,16 +105,16 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	float: left;
+	/*float: left;*/
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border: 3px solid #77a466;
 }
 
 .main-title {
 	height: auto;
-	float: left;
+	/*float: left;*/
 }
 .main-title h3 {
 	text-align: left;
@@ -122,10 +130,11 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	/*width: 33%;*/
 	height: auto;
-	float: left;
+	/*float: left;*/
 	border-top: 1px solid #eee;
+	width: 100%;
 }
 
 .section-one h4 {
@@ -178,4 +187,89 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 14px;
+}
+
+@media all and (min-width: 768px){
+	
+	header {
+		/*height: 110px;*/
+		width: 100%;
+		border-bottom: 3px solid #77a466;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column wrap;
+	}
+	
+	header nav {
+		/*float: right;*/
+		text-align: center;
+		width: 10%;
+		padding: 46px 0;
+	}
+
+	.bottom-section{
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.section-one{
+		padding-left: 30px;
+		height: 275px;
+	}
+
+	.section-two{
+		height: 275px;
+	}
+	
+	.section-three{
+		height: 275px;
+	}
+	
+	footer {
+		width: 100%;
+		height: 50px;
+		border-top: 3px solid #eee;
+		margin: 0 auto;
+		clear: both;
+		text-align: center;
+	}
+	
+		
+}
+
+@media all and (min-width: 1200px){
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	header {
+		height: 110px;
+		width: 100%;
+		border-bottom: 3px solid #77a466;
+		margin: 0 auto;
+	}
+
+	header h1 {
+		float: left;
+		margin: 0;
+		padding: 38px 0;
+	}
+	header nav {
+		float: right;
+		width: 60%;
+		padding: 46px 0;
+	}
+
+	footer {
+		width: 100%;
+		height: 50px;
+		border-top: 3px solid #eee;
+		margin: 0 auto;
+		clear: both;
+		text-align: center;
+	}
+
 }
