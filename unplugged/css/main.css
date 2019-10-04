@@ -97,7 +97,58 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*----------------Base Header - Footer Styles-------------*/
+
+   /*---------GENERAL STYLES---------*/
+   html{
+      font-size: 16px;
+   }
+
+   body{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+      text-align: left;
+   }
+
+   ul, ol{
+      list-style-type: none;
+   }
+
+   a{
+    color: #e2e3ed;
+    text-decoration: none;
+   }
+
+   h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8em;
+   }
+
+   h3, h4{
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+    font-size: 1.1em;
+   }
+
+   p{
+    font-size: .8em;
+    line-height: 1.2;
+   }
+
+   address{
+     font-style: normal;
+   }
+
+   .content-wrapper{
+     width: 90%;
+     margin: 50px 0;
+
+   }
+
+
+
+
+
+   /*----------------Base Header - Footer Styles-------------*/
 
 header,
 footer{
