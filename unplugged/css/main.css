@@ -137,6 +137,14 @@ textarea {
     line-height: 1.2;
    }
 
+   img{
+     width: 100%
+   }
+
+   figure{
+     margin: 0;
+   }
+
    address{
      font-style: normal;
    }
@@ -174,6 +182,15 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+  background-image: url ('img/hero.png');
+}
+
+header figure{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -241,6 +258,10 @@ footer .copyright{
 /*--Main--*/
 
 .hero-area{
+  background: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -484,6 +505,10 @@ header{
 header .content-wrapper{
   width: 100%;
   justify-content: space-between;
+}
+
+header figure{
+  width: 30%;
 }
 
 header nav{
