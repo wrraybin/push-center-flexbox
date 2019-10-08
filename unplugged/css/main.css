@@ -250,6 +250,11 @@ footer .social-icons p{
   align-items: center;
 }
 
+footer .social-icons i{
+  padding: 10px;
+  color: #527158;
+}
+
 footer .copyright{
   margin: 20px 0;
 }
