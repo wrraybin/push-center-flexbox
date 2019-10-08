@@ -182,7 +182,6 @@ header .content-wrapper{
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
-  background-image: url ('img/hero.png');
 }
 
 header figure{
@@ -287,6 +286,7 @@ aside .form{
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/group.jpg');
 }
 
 .features h2{
